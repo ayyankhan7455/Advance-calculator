@@ -109,7 +109,7 @@ def main():
             history.append(f"squareroot of {num1}={square_root(num1)}")
         elif choice == 7:
             num1=int(input("Enter the first number:"))
-            print("flog{num1} is {logarithm(num1)}")
+            print(f"log{num1} is {logarithm(num1)}")
             history.append("flog{num1} = {logarithm(num1)}")
         elif choice == 8:
             num1=int(input("Enter the first number:"))
