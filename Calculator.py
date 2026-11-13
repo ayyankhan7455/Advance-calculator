@@ -31,31 +31,31 @@ def square(a):
     engine.runAndWait()
     return a**2
 def square_root(a):
-    engine.say("squareroot of {a} is {math.sqrt(a)}")
+    engine.say(f"squareroot of {a} is {math.sqrt(a)}")
     engine.runAndWait()
     return math.sqrt(a)
 def logarithm(a):
-    engine.say("logarithm of {a} is {math.log(a)}")
+    engine.say(f"logarithm of {a} is {math.log(a)}")
     engine.runAndWait()
     return math.log(a)
 def sine(a):
-    engine.say("sine{a} is= {math.sin(a)}")
+    engine.say(f"sine{a} is= {math.sin(a)}")
     engine.runAndWait()
     return math.sin(math.radians(a))
 def cosine(a):
-    engine.say("cos{a} is = {math.cos(a)}")
+    engine.say(f"cos{a} is = {math.cos(a)}")
     engine.runAndWait()
     return math.cos(math.radians(a))
 def tangent(a):
-    engine.say("tan{a} is = {math.tan(a)}")
+    engine.say(f"tan{a} is = {math.tan(a)}")
     engine.runAndWait()
     return math.tan(math.radians(a))
 def log_base_10(a):
-    engine.say("base10 log of {a} is = {math.log10(a)}")
+    engine.say(f"base10 log of {a} is = {math.log10(a)}")
     engine.runAndWait()
     return math.log10(x)
 def antilog(a):
-    engine.say("antilog{a} is = {10**a}")
+    engine.say(f"antilog{a} is = {10**a}")
     engine.runAndWait()
     return 10**a
 def show_history():
