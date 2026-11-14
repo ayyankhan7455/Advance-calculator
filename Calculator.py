@@ -116,35 +116,35 @@ def main():
             print(f"{num1} / {num2} = {divison(num1,num2)}")
             history.append(f"{num1} / {num2}={divison(num1,num2)}")
         elif choice == 5:
-            num1=int(input("Enter the first number:"))
+            num1=int(input("Enter the number:"))
             print(f"suare of {num1} is {square(num1)}")
             history.append(f"square of {num1}={square(num1)}")
         elif choice == 6:
-            num1=int(input("Enter the first number:"))
+            num1=int(input("Enter the number:"))
             print(f"suareroot of {num1} is {square_root(num1)}")
             history.append(f"squareroot of {num1}={square_root(num1)}")
         elif choice == 7:
-            num1=int(input("Enter the first number:"))
+            num1=int(input("Enter the number:"))
             print(f"log{num1} is {logarithm(num1)}")
             history.append("flog{num1} = {logarithm(num1)}")
         elif choice == 8:
-            num1=int(input("Enter the first number:"))
+            num1=int(input("Enter the number:"))
             print(f"log10 of {num1} is {log_base_10(num1)}")
             history.append(f"log10 of {num1} = {log_base_10(num1)}")
         elif choice == 9:
-            num1=int(input("Enter the first number:"))
+            num1=int(input("Enter the number:"))
             print(f"Antilog of {num1} is {antilog(num1)}")
             history.append(f"Antilog of {num1} = {antilog(num1)}")
         elif choice == 10:
-            num1=int(input("Enter the first number:"))
+            num1=int(input("Enter the number:"))
             print(f"sin{num1} is {sine(num1)}")
             history.append(f"sin{num1} = {sine(num1)}")
         elif choice == 11:       
-            num1=int(input("Enter the first number:"))
+            num1=int(input("Enter the number:"))
             print(f"cos{num1} is {cosine(num1)}")
             history.append(f"cos{num1} = {cosine(num1)}")
         elif choice == 12:
-            num1=int(input("Enter the first number:"))
+            num1=int(input("Enter the number:"))
             print(f"tan{num1} is {tangent(num1)}")
             history.append(f"tan{num1} = {tangent(num1)}")
         elif choice == 13:
