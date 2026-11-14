@@ -74,7 +74,7 @@ def main():
 
         print("========= An advance Caculator ===========")
         print("1.Adition(+)\n2.Subtraction(-)\n3.Multiplication(x)\n4.Division(/)\n5.square\n6.squareroot\n7.logarithm\n8.log_base10\n9.antilog\n10.sin\n11.cos\n12.tang\n13.show_history\n14.clear_history")
-        
+        print("Select the method of input")
         print("1.talk\n2.Speak")
         method=int(input("choose input method:"))
     
