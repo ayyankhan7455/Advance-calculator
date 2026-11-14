@@ -1,10 +1,10 @@
-# 🧮 Advanced Voice-Enabled Calculator
+#Advanced Voice-Enabled Calculator
 
-## 📌 About
+##About
 
 This is an advanced calculator built with Python. It includes scientific calculations, voice input, text-to-speech, and calculation history.
 
-## 🚀 Features
+##Features
 
 - Addition
 - Subtraction
@@ -30,22 +30,22 @@ This is an advanced calculator built with Python. It includes scientific calcula
 - `SpeechRecognition`
 - `pyttsx3`
 
-## 🎙️ Voice Input
+##Voice Input
 
 The project uses `SpeechRecognition` to take input through the microphone and convert speech into text.
 
-## 🔊 Voice Output
+##Voice Output
 
 The project uses `pyttsx3` to convert text into speech and speak the calculator's results.
 
-## 📝 Calculation History
+##Calculation History
 
 The calculator stores previous calculations and allows the user to:
 
 - View history
 - Clear history
 
-## 📐 Scientific Operations
+##Scientific Operations
 
 The calculator supports:
 
