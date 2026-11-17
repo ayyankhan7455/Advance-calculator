@@ -96,23 +96,23 @@ def main():
                print("Internet Connection problem")
                return
         if choice == 1:
-            num1=int(input("Enter the first number:"))
-            num2=int(input("Enter the second number:"))
+            num1=input("Enter the first number:")
+            num2=input("Enter the second number:")
             print(f"{num1} + {num2} = {sum(num1,num2)}")
             history.append(f"{num1} + {num2}={sum(num1,num2)}")
         elif choice == 2:
-            num1=int(input("Enter the first number:"))
-            num2=int(input("Enter the second number:"))
+            num1=input("Enter the first number:")
+            num2=input("Enter the second number:")
             print(f"{num1} - {num2} = {subtract(num1,num2)}")
             history.append(f"{num1} - {num2}={subtract(num1,num2)}")
         elif choice == 3:
-            num1=int(input("Enter the first number:"))
-            num2=int(input("Enter the second number:"))
+            num1=input("Enter the first number:")
+            num2=input("Enter the second number:")
             print(f"{num1} * {num2} = {product(num1,num2)}")
             history.append(f"{num1} * {num2}={product(num1,num2)}")
         elif choice == 4:
-            num1=int(input("Enter the first number:"))
-            num2=int(input("Enter the second number:"))
+            num1=input("Enter the first number:")
+            num2=input("Enter the second number:")
             print(f"{num1} / {num2} = {divison(num1,num2)}")
             history.append(f"{num1} / {num2}={divison(num1,num2)}")
         elif choice == 5:
