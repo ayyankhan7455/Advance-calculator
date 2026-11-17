@@ -103,13 +103,13 @@ def main():
         elif choice == 2:
             num1=int(input("Enter the first number:"))
             num2=int(input("Enter the second number:"))
-            print(f"{num1} x {num2} = {product(num1,num2)}")
-            history.append(f"{num1} * {num2}={product(num1,num2)}")
+            print(f"{num1} - {num2} = {subtract(num1,num2)}")
+            history.append(f"{num1} - {num2}={subtract(num1,num2)}")
         elif choice == 3:
             num1=int(input("Enter the first number:"))
             num2=int(input("Enter the second number:"))
-            print(f"{num1} - {num2} = {subtract(num1,num2)}")
-            history.append(f"{num1} - {num2}={subtract(num1,num2)}")
+            print(f"{num1} * {num2} = {product(num1,num2)}")
+            history.append(f"{num1} * {num2}={product(num1,num2)}")
         elif choice == 4:
             num1=int(input("Enter the first number:"))
             num2=int(input("Enter the second number:"))
@@ -126,7 +126,7 @@ def main():
         elif choice == 7:
             num1=int(input("Enter the number:"))
             print(f"log{num1} is {logarithm(num1)}")
-            history.append("flog{num1} = {logarithm(num1)}")
+            history.append(f"log{num1} = {logarithm(num1)}")
         elif choice == 8:
             num1=int(input("Enter the number:"))
             print(f"log10 of {num1} is {log_base_10(num1)}")
