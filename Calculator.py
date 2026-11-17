@@ -53,7 +53,7 @@ def tangent(a):
 def log_base_10(a):
     engine.say(f"base10 log of {a} is = {math.log10(a)}")
     engine.runAndWait()
-    return math.log10(x)
+    return math.log10(a)
 def antilog(a):
     engine.say(f"antilog{a} is = {10**a}")
     engine.runAndWait()
