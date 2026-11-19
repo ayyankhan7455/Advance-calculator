@@ -25,7 +25,7 @@ def subtract(a,b):
     engine.runAndWait()
     return a - b
 
-def divison(a,b):
+def division(a,b):
     text=f"divison of two integers is {a / b}"
     engine.say(text)
     engine.runAndWait()
@@ -46,17 +46,17 @@ def logarithm(a):
     engine.runAndWait()
     return math.log(a)
 def sine(a):
-    text=f"sine{a} is= {math.sin(math.radian(a))}"
+    text=f"sine{a} is= {math.sin(math.radians(a))}"
     engine.say(text)
     engine.runAndWait()
     return math.sin(math.radians(a))
 def cosine(a):
-    text=f"cos{a} is = {math.cos(math.radian(a))}"
+    text=f"cos{a} is = {math.cos(math.radians(a))}"
     engine.say(text)
     engine.runAndWait()
     return math.cos(math.radians(a))
 def tangent(a):
-    text=f"tan{a} is = {math.tan(math.radian(a))}"
+    text=f"tan{a} is = {math.tan(math.radians(a))}"
     engine.say(text)
     engine.runAndWait()
     return math.tan(math.radians(a))
@@ -129,7 +129,7 @@ def main():
             num1=float(input("Enter the first number:"))
             num2=float(input("Enter the second number:"))
             result=division(num1,num2)
-            if num2 > 0:
+            if num2 != 0:
                 print(f"{num1} / {num2} = {result}")
                 history.append(f"{num1} / {num2}={result}")
             else:
@@ -141,7 +141,7 @@ def main():
             history.append(f"square of {num1}={result}")
         elif choice == 6:
             num1=float(input("Enter the number:"))
-            if num1 > 0:
+            if num1 >= 0:
                 result=square_root(num1)
                 print(f"suareroot of {num1} is {result}")
                 history.append(f"squareroot of {num1}={result}")
@@ -150,13 +150,19 @@ def main():
         elif choice == 7:
             num1=float(input("Enter the number:"))
             result=logarithm(num1)
-            print(f"log{num1} is {result}")
-            history.append(f"log{num1} = {result}")
+            if num1 > 0:
+                print(f"log{num1} is {result}")
+                history.append(f"log{num1} = {result}")
+            else:
+                print("Scientific Error enter a positive number")
         elif choice == 8:
             num1=float(input("Enter the number:"))
             result=log_base_10(num1)
-            print(f"log10 of {num1} is {result}")
-            history.append(f"log10 of {num1} = {result}")
+            if num > 0:
+                print(f"log10 of {num1} is {result}")
+                history.append(f"log10 of {num1} = {result}")
+            else:
+                print("Scientific Error enter a positive number")
         elif choice == 9:
             num1=float(input("Enter the number:"))
             result=antilog(num1)
