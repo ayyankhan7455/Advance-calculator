@@ -103,10 +103,10 @@ def main():
                choice=int(text)
             except sr.UnknownValueError:
                print("Could not under stand you!")
-               return
+               continue
             except sr.RequestError:
                print("Internet Connection problem")
-               return
+               continue
         if choice == 1:
             num1=float(input("Enter the first number:"))
             num2=float(input("Enter the second number:"))
