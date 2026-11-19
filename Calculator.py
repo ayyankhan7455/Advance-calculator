@@ -7,55 +7,67 @@ history=[]
 
 
 def sum(a,b):
-    engine.say("sum of two integers is",a + b)
+    text=f"sum of two integers is {a + b}"
+    engine.say(text)
     engine.runAndWait()
     return a + b
     
 def product(a,b):
-    engine.say("product of two integers is",a*b)
+    text=f"product of two integers is {a * b}"
+    engine.say(text)
     engine.runAndWait()
     return a * b
     
     
 def subtract(a,b):
-    engine.say("difference of two integers is",a-b)
+    text=f"product of two integers is {a - b}"
+    engine.say(text)
     engine.runAndWait()
     return a - b
 
 def divison(a,b):
-    engine.say("division of two integers is",a / b)
+    text=f"product of two integers is {a / b}"
+    engine.say(text)
     engine.runAndWait()
     return a / b
 def square(a):
-    engine.say(f"square of {a} is {a**2}")
+    text=f"square of {a} is {a**2}"
+    engine.say(text)
     engine.runAndWait()
     return a**2
 def square_root(a):
-    engine.say(f"squareroot of {a} is {math.sqrt(a)}")
+    text=f"squareroot of {a} is {math.sqrt(a)}"
+    engine.say(text)
     engine.runAndWait()
     return math.sqrt(a)
 def logarithm(a):
-    engine.say(f"logarithm of {a} is {math.log(a)}")
+    text=f"logarithm of {a} is {math.log(a)}"
+    engine.say(text)
     engine.runAndWait()
     return math.log(a)
 def sine(a):
-    engine.say(f"sine{a} is= {math.sin(a)}")
+    text=f"sine{a} is= {math.sin(a)}"
+    engine.say(text)
     engine.runAndWait()
     return math.sin(math.radians(a))
 def cosine(a):
-    engine.say(f"cos{a} is = {math.cos(a)}")
+    text=f"cos{a} is = {math.cos(a)}"
+    engine.say(text)
     engine.runAndWait()
     return math.cos(math.radians(a))
 def tangent(a):
-    engine.say(f"tan{a} is = {math.tan(a)}")
+    text=f"tan{a} is = {math.tan(a)}"
+    engine.say(text)
     engine.runAndWait()
     return math.tan(math.radians(a))
 def log_base_10(a):
-    engine.say(f"base10 log of {a} is = {math.log10(a)}")
+    text=f"base10 log of {a} is = {math.log10(a)}"
+    engine.say(text)
     engine.runAndWait()
     return math.log10(a)
 def antilog(a):
-    engine.say(f"antilog{a} is = {10**a}")
+    text=f"antilog{a} is = {10**a}"
+    engine.say(text)
     engine.runAndWait()
     return 10**a
 def show_history():
