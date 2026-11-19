@@ -110,61 +110,73 @@ def main():
         if choice == 1:
             num1=float(input("Enter the first number:"))
             num2=float(input("Enter the second number:"))
-            print(f"{num1} + {num2} = {sum(num1,num2)}")
-            history.append(f"{num1} + {num2}={sum(num1,num2)}")
+            result=sum(num1,num2)
+            print(f"{num1} + {num2} = {result}")
+            history.append(f"{num1} + {num2}={result}")
         elif choice == 2:
             num1=float(input("Enter the first number:"))
             num2=float(input("Enter the second number:"))
-            print(f"{num1} - {num2} = {subtract(num1,num2)}")
-            history.append(f"{num1} - {num2}={subtract(num1,num2)}")
+            result=subtract(num1,num2)
+            print(f"{num1} - {num2} = {result}")
+            history.append(f"{num1} - {num2}={result}")
         elif choice == 3:
             num1=float(input("Enter the first number:"))
             num2=float(input("Enter the second number:"))
-            print(f"{num1} * {num2} = {product(num1,num2)}")
-            history.append(f"{num1} * {num2}={product(num1,num2)}")
+            result=product(num1,num2)
+            print(f"{num1} * {num2} = {result}")
+            history.append(f"{num1} * {num2}={result}")
         elif choice == 4:
             num1=float(input("Enter the first number:"))
             num2=float(input("Enter the second number:"))
+            result=division(num1,num2)
             if num2 > 0:
-                print(f"{num1} / {num2} = {divison(num1,num2)}")
-                history.append(f"{num1} / {num2}={divison(num1,num2)}")
+                print(f"{num1} / {num2} = {result}")
+                history.append(f"{num1} / {num2}={result}")
             else:
                 print("Scientific Error Cannot divide by 0")
         elif choice == 5:
             num1=float(input("Enter the number:"))
-            print(f"suare of {num1} is {square(num1)}")
-            history.append(f"square of {num1}={square(num1)}")
+            result=square(num1)
+            print(f"suare of {num1} is {result}")
+            history.append(f"square of {num1}={result}")
         elif choice == 6:
             num1=float(input("Enter the number:"))
             if num1 > 0:
-                print(f"suareroot of {num1} is {square_root(num1)}")
-                history.append(f"squareroot of {num1}={square_root(num1)}")
+                result=square_root(num1)
+                print(f"suareroot of {num1} is {result}")
+                history.append(f"squareroot of {num1}={result}")
             else:
                 print("Scientific Error enter a positive number")
         elif choice == 7:
             num1=float(input("Enter the number:"))
-            print(f"log{num1} is {logarithm(num1)}")
-            history.append(f"log{num1} = {logarithm(num1)}")
+            result=logarithm(num1)
+            print(f"log{num1} is {result}")
+            history.append(f"log{num1} = {result}")
         elif choice == 8:
             num1=float(input("Enter the number:"))
-            print(f"log10 of {num1} is {log_base_10(num1)}")
-            history.append(f"log10 of {num1} = {log_base_10(num1)}")
+            result=log_base_10(num1)
+            print(f"log10 of {num1} is {result}")
+            history.append(f"log10 of {num1} = {result}")
         elif choice == 9:
             num1=float(input("Enter the number:"))
-            print(f"Antilog of {num1} is {antilog(num1)}")
-            history.append(f"Antilog of {num1} = {antilog(num1)}")
+            result=antilog(num1)
+            print(f"Antilog of {num1} is {result}")
+            history.append(f"Antilog of {num1} = {result}")
         elif choice == 10:
             num1=float(input("Enter the number:"))
-            print(f"sin{num1} is {sine(num1)}")
-            history.append(f"sin{num1} = {sine(num1)}")
+            result=sine(num1)
+            print(f"sin{num1} is {result}")
+            history.append(f"sin{num1} = {result}")
         elif choice == 11:       
             num1=float(input("Enter the number:"))
-            print(f"cos{num1} is {cosine(num1)}")
-            history.append(f"cos{num1} = {cosine(num1)}")
+            result=cosine(num1)
+            print(f"cos{num1} is {result}")
+            history.append(f"cos{num1} = {result}")
         elif choice == 12:
             num1=float(input("Enter the number:"))
-            print(f"tan{num1} is {tangent(num1)}")
-            history.append(f"tan{num1} = {tangent(num1)}")
+            result=tangent(num1)
+            print(f"tan{num1} is {result}")
+            history.append(f"tan{num1} = {result}")
         elif choice == 13:
             show_history()
         elif choice == 14:
