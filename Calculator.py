@@ -20,13 +20,13 @@ def product(a,b):
     
     
 def subtract(a,b):
-    text=f"product of two integers is {a - b}"
+    text=f"difference of two integers is {a - b}"
     engine.say(text)
     engine.runAndWait()
     return a - b
 
 def divison(a,b):
-    text=f"product of two integers is {a / b}"
+    text=f"divison of two integers is {a / b}"
     engine.say(text)
     engine.runAndWait()
     return a / b
@@ -46,17 +46,17 @@ def logarithm(a):
     engine.runAndWait()
     return math.log(a)
 def sine(a):
-    text=f"sine{a} is= {math.sin(a)}"
+    text=f"sine{a} is= {math.sin(math.radian(a))}"
     engine.say(text)
     engine.runAndWait()
     return math.sin(math.radians(a))
 def cosine(a):
-    text=f"cos{a} is = {math.cos(a)}"
+    text=f"cos{a} is = {math.cos(math.radian(a))}"
     engine.say(text)
     engine.runAndWait()
     return math.cos(math.radians(a))
 def tangent(a):
-    text=f"tan{a} is = {math.tan(a)}"
+    text=f"tan{a} is = {math.tan(math.radian(a))}"
     engine.say(text)
     engine.runAndWait()
     return math.tan(math.radians(a))
