@@ -125,16 +125,22 @@ def main():
         elif choice == 4:
             num1=float(input("Enter the first number:"))
             num2=float(input("Enter the second number:"))
-            print(f"{num1} / {num2} = {divison(num1,num2)}")
-            history.append(f"{num1} / {num2}={divison(num1,num2)}")
+            if num2 > 0:
+                print(f"{num1} / {num2} = {divison(num1,num2)}")
+                history.append(f"{num1} / {num2}={divison(num1,num2)}")
+            else:
+                print("Scientific Error Cannot divide by 0")
         elif choice == 5:
             num1=float(input("Enter the number:"))
             print(f"suare of {num1} is {square(num1)}")
             history.append(f"square of {num1}={square(num1)}")
         elif choice == 6:
             num1=float(input("Enter the number:"))
-            print(f"suareroot of {num1} is {square_root(num1)}")
-            history.append(f"squareroot of {num1}={square_root(num1)}")
+            if num1 > 0:
+                print(f"suareroot of {num1} is {square_root(num1)}")
+                history.append(f"squareroot of {num1}={square_root(num1)}")
+            else:
+                print("Scientific Error enter a positive number")
         elif choice == 7:
             num1=float(input("Enter the number:"))
             print(f"log{num1} is {logarithm(num1)}")
